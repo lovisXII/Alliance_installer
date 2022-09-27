@@ -1,15 +1,11 @@
 #!/bin/bash
-  
+
 echo "This script will recompile alliance binary for your system"
-mkdir $HOME/alliance
-export INSTALL_ALLIANCE_PATH=$HOME/alliance
-
-apt install build-essential git gcc g++ autoconf automake \
-libtool bison flex libx11-dev libxt-dev libxaw-dev libmotif-dev \
-xfig texlive texlive-pictures texlive-latex-extra
-
 echo "Cloning alliance repository in ${HOME}/alliance"
 
+mkdir $HOME/alliance
+export INSTALL_ALLIANCE_PATH=$HOME/alliance
+cd $INSTALL_ALLIANCE_PATH
 git clone https://gitlab.lip6.fr/vlsi-eda/alliance.git
   
 echo "Alliance compaling"
