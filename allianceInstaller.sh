@@ -8,7 +8,7 @@ export INSTALL_ALLIANCE_PATH=$HOME/alliance
 cd $INSTALL_ALLIANCE_PATH
 git clone https://gitlab.lip6.fr/vlsi-eda/alliance.git
   
-echo "Alliance compaling"
+echo "Alliance compiling"
 
 srcDir=${INSTALL_ALLIANCE_PATH}/alliance/alliance/src
 commonRoot=${INSTALL_ALLIANCE_PATH}
